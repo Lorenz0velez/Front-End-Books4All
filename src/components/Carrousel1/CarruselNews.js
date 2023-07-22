@@ -8,7 +8,8 @@ import { Link } from "react-router-dom";
 export default function Carrusel1() {
   const slides = [1];
   const books = useSelector((state) => state.allBooks);
-  let dateNotNull = books.filter((book) => book.date !== null);
+  // let dateNotNull = books.filter((book) => book.date !== null); --->> ERROR CONSOLA
+  let dateNotNull = Array.isArray(books) ? books.filter((book) => book.date !== null) : []; // SOLUCION CHAT GPT
   const latestNews = dateNotNull.sort((a, b) => b.date.localeCompare(a.date));
   const bookTitle = latestNews.map((book) => book.title).slice(0, 20);
 
