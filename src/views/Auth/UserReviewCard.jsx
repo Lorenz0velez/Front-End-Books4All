@@ -23,4 +23,29 @@ const UserReviewCard = ({ body, rating, user_name, book}) => {
     )
 }
 
+// Reserva sabado
+// 1 Escon
+// 2 Verce
+// 3 Enzo
+// 4 Nahuel
+// 5 Melli -->> jugo 80
+// 6 Juani
+// 7 Mono -->> jugo 80
+// 8 Jena
+// 9 Luchi
+// 10 Lolo
+// 11 Tirri
+// 12 Lalo -->> jugo 80
+// 13 Roson
+// 14 Toto -->> no esta
+// 15 Chino F -->> no esta
+// 16 Rossi
+// 17 Martin 
+// 18 Diego M
+// 19 Galmes
+// 20 Igna G
+// 21 Nacho Barrionuevo
+// 22 Garzon
+// 23 Simon
+
 export default UserReviewCard;
