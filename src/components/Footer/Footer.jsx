@@ -4,7 +4,8 @@ import { AppBar, Toolbar, Typography } from "@mui/material";
 
 export default function Footer() {
     return(
-        <AppBar position="fixed-bottom" color="primary" style={{ backgroundColor: '#000000'}}>
+        // <AppBar position="fixed-bottom" color="primary" style={{ backgroundColor: '#000000'}}>
+        <AppBar position="bottom" color="primary" style={{ backgroundColor: '#000000'}}>
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between'}}>
         <Typography variant="body1" color="inherit">
         <Link to="/about" className="text-light text-decoration-none">About us</Link>

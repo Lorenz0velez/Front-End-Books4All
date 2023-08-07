@@ -17,12 +17,20 @@ const domain = 'dev-i11mawm4dj14cqbt.us.auth0.com';
 // const clientId = 'Jb0tkNGAsOvygZViD8G1VGhcM5T8FRe3'; -->> original config
 const clientId= 'gEpbcOoX2vEm7voZicIlZg61SOH29UI6';
 
+const domain2= process.env.REACT_APP_AUTH0_DOMAIN;
+const clientID2= process.env.REACT_APP_AUTH0_CLIENT_ID;
+
+console.log(
+  'domain: '+ domain2,
+  'clientID: '+clientID2
+)
+
 
 const root = createRoot(document.getElementById("root"));
 root.render(
   <Auth0Provider
-    domain={domain}
-    clientId={clientId}
+    domain={domain2}
+    clientId={clientID2}
     redirectUri={window.location.origin}
   >
     <Provider store={store}>
