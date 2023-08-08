@@ -29,8 +29,8 @@ console.log(
 const root = createRoot(document.getElementById("root"));
 root.render(
   <Auth0Provider
-    domain={domain2}
-    clientId={clientID2}
+    domain={domain}
+    clientId={clientId}
     redirectUri={window.location.origin}
   >
     <Provider store={store}>
