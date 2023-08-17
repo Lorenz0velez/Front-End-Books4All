@@ -20,11 +20,6 @@ const clientId= 'gEpbcOoX2vEm7voZicIlZg61SOH29UI6';
 const domain2= process.env.REACT_APP_AUTH0_DOMAIN;
 const clientID2= process.env.REACT_APP_AUTH0_CLIENT_ID;
 
-console.log(
-  'domain: '+ domain2,
-  'clientID: '+clientID2
-)
-
 
 const root = createRoot(document.getElementById("root"));
 root.render(
